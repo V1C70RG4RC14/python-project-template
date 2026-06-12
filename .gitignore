@@ -29,4 +29,5 @@ dist/
 .DS_Store
 
 # VS Code
-.vscode/
+.vscode/*
+!.vscode/settings.json
