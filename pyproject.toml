@@ -1,0 +1,33 @@
+[project]
+name = "project_name"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.4",
+    "ruff>=0.12",
+]
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
